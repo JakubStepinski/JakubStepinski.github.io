@@ -40,7 +40,7 @@ export default class BeerCard extends Component {
     }
     render() {
         const viewDownload = <div className='beerListBuffer'>
-            <img src='images/drink-big.png' />
+            <img src='../../images/drink-big.png' />
             <Spinner downError={this.state.badSrc} height='100px' />
         </div>;
         return (

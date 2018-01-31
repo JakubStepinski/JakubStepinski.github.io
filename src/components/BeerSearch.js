@@ -88,7 +88,7 @@ export default class BeerSearch extends Component {
                     className='col-12 navSearch'
                     type='search'
                     />
-                <img className='searchIcon' src={'images/search.PNG'} alt='' />
+                <img className='searchIcon' src={'../../images/search.PNG'} alt='' />
                 <div className={this.state.showList ? 'col-12 p-2 searchRecords' : 'searchRecordsInvi'}>
                     {this.state.loading ? <Spinner /> : <ul className='m-0'>{resultArray}</ul>}
                 </div>
