@@ -4553,7 +4553,7 @@ var BeerCard = function (_Component) {
             var viewDownload = _react2.default.createElement(
                 'div',
                 { className: 'beerListBuffer' },
-                _react2.default.createElement('img', { src: 'images/drink-big.png' }),
+                _react2.default.createElement('img', { src: '../../images/drink-big.png' }),
                 _react2.default.createElement(_spinner2.default, { downError: this.state.badSrc, height: '100px' })
             );
             return _react2.default.createElement(
@@ -27320,7 +27320,7 @@ var NavBar = function (_Component) {
                 _react2.default.createElement(
                     _reactRouterDom.Link,
                     { to: '/', className: 'navbar-brand col-12 col-sm-5 col-lg-3', href: '#' },
-                    _react2.default.createElement('img', { className: 'd-inline-block align-top', src: 'images/drink.png', alt: '' }),
+                    _react2.default.createElement('img', { className: 'd-inline-block align-top', src: '../../images/drink.png', alt: '' }),
                     'Beer app'
                 ),
                 _react2.default.createElement(
@@ -27489,7 +27489,7 @@ var BeerSearch = function (_Component) {
                     className: 'col-12 navSearch',
                     type: 'search'
                 }),
-                _react2.default.createElement('img', { className: 'searchIcon', src: 'images/search.PNG', alt: '' }),
+                _react2.default.createElement('img', { className: 'searchIcon', src: '../../images/search.PNG', alt: '' }),
                 _react2.default.createElement(
                     'div',
                     { className: this.state.showList ? 'col-12 p-2 searchRecords' : 'searchRecordsInvi' },
@@ -45602,7 +45602,6 @@ var BeerList = function (_Component) {
         key: 'componentDidMount',
         value: function componentDidMount() {
             window.addEventListener('scroll', this.handleScroll);
-            console.log(this.props.beerData.length);
             if (!this.props.beerData.length) {
                 this.props.fetchStartData();
                 this.setState({
